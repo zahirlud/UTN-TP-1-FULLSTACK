@@ -390,6 +390,9 @@ input[type="number"]::-webkit-outer-spin-button {
     flex-direction: column;
   }
 
+  .background-wrap {
+    padding: 2rem 0.5rem;
+  }
   .content {
     height: 70%;
   }
@@ -536,10 +539,6 @@ input[type="number"]::-webkit-outer-spin-button {
   .item-8 {
     grid-row: 9/10;
     grid-column: -2/-1;
-  }
-
-  .background-wrap {
-    padding: 2rem 0;
   }
 
   .content p {
