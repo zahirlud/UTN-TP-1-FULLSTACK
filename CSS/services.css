@@ -1,0 +1,134 @@
+.services .head {
+  background-color: rgb(34, 29, 29);
+}
+
+.services .services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 400px);
+}
+
+.services .services-grid > div {
+  border: 0.5px solid rgb(233, 187, 127);
+  color: rgba(250, 245, 245, 0.842);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.services .services-grid p {
+  padding: 0 2rem;
+}
+
+.services .services-grid h2 {
+  color: rgb(233, 187, 127);
+  max-width: 150px;
+}
+
+.services img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .services .services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 400px);
+  }
+
+  /* Footer */
+  .footerinfo {
+    flex-direction: column;
+    margin: 10rem 0 12rem 0;
+  }
+
+  .footerinfo {
+    flex-direction: column;
+    margin: 10rem 0 12rem 0;
+  }
+
+  .footerinfo > div {
+    font-size: 15px;
+  }
+
+  .div-contacto > h2 {
+    justify-content: center;
+  }
+
+  .footerinfo h2 {
+    text-align: center;
+  }
+
+  /* formulario */
+  .footerinfo form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 50px);
+  }
+
+  .footerinfo .div-contacto {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .footerinfo .h2-contacto {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footerinfo .div-formulario {
+    width: 100%;
+    padding: 0 1rem;
+    margin-top: 4rem;
+  }
+
+  .footerinfo .div-redes {
+    margin-top: 4rem;
+    width: 100%;
+  }
+
+  .footerinfo .div-redes > div {
+    text-align: center;
+  }
+
+  .footerinfo .input_apellido {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .footerinfo .input_email {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+
+  .footerinfo .input_telefono {
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+
+  .footerinfo .input_direccion {
+    grid-column: 1/3;
+    grid-row: 5/6;
+  }
+
+  .footerinfo .input_comentario {
+    grid-column: 1/3;
+    grid-row: 6/7;
+  }
+
+  .footerinfo form > button {
+    grid-column: 1/3;
+    grid-row: 7/8;
+  }
+
+  .footerinfo form > button + button {
+    grid-column: 1/3;
+    grid-row: 8/9;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .services .services-grid {
+    font-size: 12px;
+  }
+}

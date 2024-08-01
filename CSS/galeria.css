@@ -1,0 +1,191 @@
+.galeria .head {
+  background-color: rgb(34, 29, 29);
+}
+
+.galeria .grid-galeria1,
+.grid-galeria2,
+.grid-galeria3 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 300px);
+  grid-gap: 2em;
+}
+
+.galeria .item-9 {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.galeria .item-14 {
+  grid-column: 4/5;
+  grid-row: -3/-1;
+}
+
+.galeria .item-15 {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+.galeria .div-galeria1,
+.div-galeria2,
+.div-galeria3 {
+  margin: 8rem 0;
+}
+
+.galeria a {
+  text-decoration: none;
+}
+
+.galeria hr {
+  border-color: rgb(233, 187, 127);
+}
+
+.galeria h2 {
+  color: rgb(233, 187, 127);
+  font-size: 2rem;
+}
+
+.galeria .div-galeria1 p,
+.div-galeria2 p,
+.div-galeria3 p {
+  color: rgba(250, 245, 245, 0.842);
+}
+
+.galeria .item-15 img,
+.item-16 img,
+.item-17 img,
+.item-18 img,
+.item-19 img {
+  width: 100%;
+  height: 100%;
+  border: 0.5px solid rgb(233, 187, 127);
+}
+
+.galeria .opinion1 > a {
+  font-size: 2rem;
+}
+
+.galeria .opinion1 > a:hover {
+  cursor: pointer;
+}
+
+.galeria .div-proyectos {
+  margin: 2rem 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .galeria .grid-galeria1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, auto);
+    grid-gap: 2em;
+  }
+
+  .galeria .item-14 {
+    grid-column: 1/5;
+    grid-row: 6/8;
+  }
+  .galeria .grid-galeria2,
+  .grid-galeria3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, auto);
+    grid-gap: 2em;
+  }
+
+  .galeria .item-15 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+
+  .galeria .item-16 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .galeria .item-17 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+
+  .galeria .item-18 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+
+  .galeria .item-19 {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+
+  /* formulario */
+  .footerinfo form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 50px);
+  }
+
+  .footerinfo .div-contacto {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .footerinfo .h2-contacto {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footerinfo .div-formulario {
+    width: 100%;
+    padding: 0 1rem;
+    margin-top: 4rem;
+  }
+
+  .footerinfo .div-redes {
+    margin-top: 4rem;
+    width: 100%;
+  }
+
+  .footerinfo .div-redes > div {
+    text-align: center;
+  }
+
+  .footerinfo .input_apellido {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .footerinfo .input_email {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+
+  .footerinfo .input_telefono {
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+
+  .footerinfo .input_direccion {
+    grid-column: 1/3;
+    grid-row: 5/6;
+  }
+
+  .footerinfo .input_comentario {
+    grid-column: 1/3;
+    grid-row: 6/7;
+  }
+
+  .footerinfo form > button {
+    grid-column: 1/3;
+    grid-row: 7/8;
+  }
+
+  .footerinfo form > button + button {
+    grid-column: 1/3;
+    grid-row: 8/9;
+  }
+
+  .galeria .div-galeria1,
+  .div-galeria2,
+  .div-galeria3 {
+    padding: 0 5px;
+  }
+}
