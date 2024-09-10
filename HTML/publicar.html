@@ -21,8 +21,7 @@
       }
     </style>
   </head>
-
-  <body class="services">
+  <body class="publicar">
     <div class="head">
       <nav class="navbar">
         <ul class="ul_links">
@@ -37,94 +36,66 @@
           <li class="li_links">
             <a href="./publicar.html">PUBLICAR</a>
           </li>
-        
         </ul>
       </nav>
     </div>
+
     <div class="background-wrap">
-      <div class="services-grid">
-        <div style="background-color: rgba(233, 187, 127, 0.836)">
-          <h1>Nuestros Servicios</h1>
-        </div>
-        <div>
-          <h2>Remodelación Completa</h2>
-          <p>
-            La remodelación completa implica una renovación integral de toda la
-            vivienda o un área significativa de la misma. Este proceso abarca
-            tanto el interior como el exterior del inmueble y puede incluir
-            cambios en la estructura, distribución de espacios, sistemas
-            eléctricos y de plomería, acabados, y más. 
-          </p>
-        </div>
-        <div>
-          <h2>Remodelación de Cocinas</h2>
-          <p>
-            La remodelación de cocinas se centra en renovar y actualizar este
-            espacio clave de la vivienda. Puede incluir la sustitución de
-            gabinetes, encimeras, electrodomésticos, y sistemas de iluminación,
-            así como mejoras en la distribución y eficiencia del espacio. 
-          </p>
-        </div>
-        <div><img src="../Images/working.jpg" alt="" /></div>
-        <div><img src="../Images/working2.jpg" alt="" /></div>
-        <div>
-          <h2>Interiores</h2>
-          <p>
-            La remodelación de interiores abarca la transformación de los
-            espacios dentro de una vivienda. Esto puede incluir cambios en la
-            distribución de las habitaciones, mejoras en el aislamiento térmico
-            y acústico, la renovación de suelos, techos y paredes, así como la
-            instalación de nuevos sistemas de iluminación y decoración. 
-          </p>
-        </div>
-        <div>
-          <h2>Pisos</h2>
-          <p>
-            La renovación de pisos implica la instalación de nuevos materiales
-            de suelo en una vivienda o edificio. Esto puede incluir una variedad
-            de materiales como madera, cerámica, vinilo, piedra, alfombras,
-            entre otros. La elección del tipo de piso depende del uso del
-            espacio, el presupuesto, y las preferencias estéticas del cliente.
-            
-          </p>
-        </div>
-        <div>
-          <h2>Remodelación de Baños</h2>
-          <p>
-            La remodelación de baños se enfoca en la renovación de los elementos
-            y sistemas dentro de un baño. Esto puede incluir la instalación de
-            nuevos accesorios como inodoros, lavabos, duchas o bañeras, así como
-            la renovación de revestimientos, suelos, y sistemas de plomería. 
-          </p>
-        </div>
-        <div><h1>Expertos en:</h1></div>
-        <div>
-          <h2>Preconstrucción</h2>
-          <ul>
-            <li>Diseño-Construcción</li>
-
-            <li>Programación</li>
-            <li>Presupuestos</li>
-          </ul>
-        </div>
-        <div>
-          <h2>Construcción</h2>
-            <ul>
-              <li>Control de Calidad</li>
-  
-              <li>Gestión de Seguridad</li>
-              <li>Gestión de Subcontratistas</li>
-        </div>
-        <div>
-          <h2>Posconstrucción</h2>
-            <ul>
-              <li>Certificado de Ocupación</li>
-  
-              <li>Planos de obra final</li>
-              <li>Planos de obra final</li>
-        </div>
+      <div>
+        <h2>
+          ¡Aqui podrás publicar los diseños que desees y estaremos en contacto a
+          la brevedad!
+        </h2>
       </div>
-
+      <div id="cards-container"></div>
+      <div id="card-form-container">
+        <form id="card-form">
+          <label for="card-title">Titulo</label>
+          <input
+            type="text"
+            id="card-title"
+            name="card-title"
+            maxlength="10"
+            required
+          />
+          <br />
+          <label for="card-description">Descripción</label>
+          <input
+            type="text"
+            id="card-description"
+            name="card-description"
+            maxlength="50"
+            required
+          />
+          <br />
+          <label for="card-image">Url Imagen</label>
+          <input
+            type="url"
+            id="card-image"
+            name="card-image"
+            value="https://www.elmueble.com/medio/2023/11/14/como-decorar-una-habitacion-de-matrimonio_99bb8f5b_FER8191b_231114150325_900x900.jpg"
+            placeholder="https://www.elmueble.com/medio/2023/11/14/como-decorar-una-habitacion-de-matrimonio_99bb8f5b_FER8191b_231114150325_900x900.jpg"
+          />
+          <br />
+          <label for="card-bg-color">Color Fondo</label>
+          <input
+            type="color"
+            id="card-bg-color"
+            name="card-bg-color"
+            required
+          />
+          <br />
+          <label for="card-color-border">Color Borde</label>
+          <input
+            type="color"
+            id="card-color-border"
+            name="card-color-border"
+            required
+          />
+          <br />
+          <button type="submit">Añadir tarjeta</button>
+        </form>
+      </div>
       <footer class="footerinfo" id="footer">
         <div class="div-contacto">
           <div style="width: 100%">
@@ -207,5 +178,6 @@
         </div>
       </footer>
     </div>
+    <script src="../script.js"></script>
   </body>
 </html>
